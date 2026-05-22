@@ -1,6 +1,7 @@
 import { useEffect, Component, ReactNode } from 'react';
 import { CartProvider } from './contexts/CartContext';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
+import { TenantProvider } from './contexts/TenantContext';
 
 // ── Error Boundary — prevents blank/black screen on runtime errors ──────────
 interface EBState { hasError: boolean; message: string }
@@ -199,11 +200,13 @@ function Router() {
 export default function App() {
   return (
     <ErrorBoundary>
-      <AuthProvider>
-        <ErrorBoundary>
-          <Router />
-        </ErrorBoundary>
-      </AuthProvider>
+      <TenantProvider>
+        <AuthProvider>
+          <ErrorBoundary>
+            <Router />
+          </ErrorBoundary>
+        </AuthProvider>
+      </TenantProvider>
     </ErrorBoundary>
   );
 }
