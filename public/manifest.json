@@ -1,0 +1,39 @@
+{
+  "name": "Japa Nara",
+  "short_name": "Japa Nara",
+  "description": "Sushi premium delivery em Ortigueira",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#dc2626",
+  "orientation": "portrait-primary",
+  "lang": "pt-BR",
+  "categories": ["food", "shopping"],
+  "icons": [
+    {
+      "src": "/logo_japanara.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo_japanara.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/logo_japanara.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/logo_japanara.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
