@@ -487,7 +487,7 @@ export default function AdminProducts() {
                   ref={fileInput}
                   type="file"
                   accept={ACCEPTED}
-                  
+                  capture="environment"
                   onChange={handleFileChange}
                   className="hidden"
                   aria-label="Selecionar imagem"
