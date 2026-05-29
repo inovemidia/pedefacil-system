@@ -43,6 +43,7 @@ import CartDrawer from './components/CartDrawer';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import MenuPage from './pages/MenuPage';
+import PromotionsPage from './pages/PromotionsPage';
 import CheckoutPage from './pages/CheckoutPage';
 import OrderStatusPage from './pages/OrderStatusPage';
 import LoginPage from './pages/LoginPage';
