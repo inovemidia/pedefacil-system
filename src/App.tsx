@@ -170,6 +170,7 @@ function Router() {
             {path === '/' && <HomePage />}
             {path === '/menu' && <MenuPage />}
             {path === '/checkout' && <CheckoutPage />}
+            {path === '/promotions' && <PromotionsPage />}
             {path === '/orders' && <MyOrdersPage />}
             {path === '/profile' && <ProfilePage />}
             {(path === '/track' || path.startsWith('/order/')) && <OrderStatusPage />}
