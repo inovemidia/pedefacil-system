@@ -20,6 +20,8 @@ export interface Product {
   name: string;
   description: string;
   price: number;
+  promotion?: boolean;
+old_price?: number;
   image_url: string;
   active: boolean;
   featured: boolean;
