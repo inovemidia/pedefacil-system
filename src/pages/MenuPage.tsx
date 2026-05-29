@@ -154,6 +154,31 @@ export default function MenuPage() {
           </div>
         </div>
       </div>
+      {/* Promoções */}
+{promoProducts.length > 0 && (
+  <section id="promos" className="mb-12">
+    <div className="flex items-center justify-between mb-6">
+      <div>
+        <p className="text-red-500 text-sm font-semibold uppercase">
+          Ofertas
+        </p>
+
+        <h2 className="text-white text-3xl font-black">
+          Promoções
+        </h2>
+      </div>
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {promoProducts.map(product => (
+        <ProductCard
+          key={product.id}
+          product={product}
+        />
+      ))}
+    </div>
+  </section>
+)}
 
       {/* Products */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
