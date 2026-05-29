@@ -12,6 +12,7 @@ export default function MenuPage() {
   const initialCategory = params.get('category') ?? 'all';
 
   const [products, setProducts] = useState<Product[]>([]);
+  const promoProducts = products.filter(p => p.promotion);
   const [categories, setCategories] = useState<Category[]>([]);
   const [activeCategory, setActiveCategory] = useState(initialCategory);
   const [search, setSearch] = useState('');
