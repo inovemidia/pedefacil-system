@@ -482,16 +482,15 @@ export default function AdminProducts() {
                   Imagem do Produto
                 </label>
 
-                {/* Hidden file input */}
-                <input
-                  ref={fileInput}
-                  type="file"
-                  accept={ACCEPTED}
-                  capture="environment"
-                  onChange={handleFileChange}
-                  className="hidden"
-                  aria-label="Selecionar imagem"
-                />
+               {/* Hidden file input */}
+<input
+  ref={fileInput}
+  type="file"
+  accept={ACCEPTED}
+  onChange={handleFileChange}
+  className="hidden"
+  aria-label="Selecionar imagem"
+/>
 
                 {imagePreview ? (
                   /* Preview state */
