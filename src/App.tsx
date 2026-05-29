@@ -177,7 +177,7 @@ function Router() {
 
             {/* 404 */}
             {![
-              '/', '/menu', '/checkout', '/track', '/orders', '/profile',
+              '/', '/menu', '/promotions', '/checkout', '/track', '/orders', '/profile',
             ].includes(path) && !path.startsWith('/order/') && (
               <div className="min-h-screen bg-black flex items-center justify-center">
                 <div className="text-center">
